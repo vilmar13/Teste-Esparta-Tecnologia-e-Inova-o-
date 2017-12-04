@@ -1,0 +1,10 @@
+SELECT aluno.nome FROM aluno inner join turma on aluno.id = turma.aluno_id inner join professor on turma.disciplina_id = professor.id where professor.nome = 'JOAO PEDRO';
+
+
+SELECT turma.dia_da_semana FROM teste.turma join disciplina where disciplina.nome = 'MATEMATICA';
+
+
+SELECT aluno.nome FROM aluno inner join turma on aluno.id = turma.aluno_id inner join disciplina on turma.disciplina_id = disciplina.id where disciplina.nome = 'MATEMATICA';
+
+
+SELECT disciplina.nome FROM disciplina join turma on not disciplina.id = turma.disciplina_id;
